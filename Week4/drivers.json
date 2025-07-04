@@ -1,0 +1,8 @@
+{
+  "_id": "ObjectId",
+  "name": "string",
+  "password": "string",
+  "vehicleType": "string",
+  "isAvailable": "boolean",
+  "rating": "double"
+}
