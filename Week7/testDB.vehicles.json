@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6857c348ad48285a2a5ef1ef"
+  },
+  "vehicleType": "Sedan",
+  "plateNumber": "QAZ1234",
+  "driverId": "6857c5afad48285a2a5ef1f4"
+},
+{
+  "_id": {
+    "$oid": "6857c368ad48285a2a5ef1f0"
+  },
+  "vehicleType": "Sedan",
+  "plateNumber": "ABC1234",
+  "driverId": "6857c514ad48285a2a5ef1f3"
+},
+{
+  "_id": {
+    "$oid": "6857c3daad48285a2a5ef1f1"
+  },
+  "vehicleType": "SUV",
+  "plateNumber": "WSX1234",
+  "driverId": "6857c5f2ad48285a2a5ef1f5"
+},
+{
+  "_id": {
+    "$oid": "6857c3e6ad48285a2a5ef1f2"
+  },
+  "vehicleType": "SUV",
+  "plateNumber": "EDC1234",
+  "driverId": "6857c648ad48285a2a5ef1f6"
+}]
