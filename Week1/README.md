@@ -1,4 +1,4 @@
-﻿# berr2243-25
+﻿# berr2243
 
 Development log for weekly databse assignments (week 1)
 -Initialized conncetion with git and GitHub
