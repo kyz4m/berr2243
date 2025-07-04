@@ -1,0 +1,8 @@
+{
+  "_id": "ObjectId",
+  "pickupLocation": "string",
+  "destination": "string",
+  "status": "string",
+  "customerId": "ObjectId",
+  "driverId": "ObjectId"
+}
