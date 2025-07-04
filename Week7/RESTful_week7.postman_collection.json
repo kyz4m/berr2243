@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "3a5606c4-2249-417d-a9f6-590bf730c072",
+		"name": "RESTful_week7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44018864",
+		"_collection_link": "https://eshwaarpalani.postman.co/workspace/Eshwaar-Palani's-Workspace~9c739893-9b38-402f-8ac6-73507b34f219/collection/44018864-3a5606c4-2249-417d-a9f6-590bf730c072?action=share&source=collection_link&creator=44018864"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Charlie\",\r\n  \"password\": \"passwordCharlie\",\r\n  \"age\": \"23\",\r\n  \"role\": \"user\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Charlie\",\r\n  \"password\": \"passwordCharlie\",\r\n  \"age\": \"23\",\r\n  \"role\": \"user\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/drivers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sandra\",\r\n  \"password\": \"passwordSandra\",\r\n  \"vehicleType\": \"Sedan\",\r\n  \"isAvailable\": true,\r\n  \"rating\": 4.1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/drivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/drivers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/drivers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"drivers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/drivers/6856dc9c1235f61715f6f15b",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"isAvailable\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/drivers/6856dc9c1235f61715f6f15b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"drivers",
+						"6856dc9c1235f61715f6f15b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/rides",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/rides",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/rides",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/rides/6856c06ad18bf1d41ab9acd8",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"status\": \"pending\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides/6856c06ad18bf1d41ab9acd8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides",
+						"6856c06ad18bf1d41ab9acd8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/rides/6856ef4e1235f61715f6f160",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/rides/6856ef4e1235f61715f6f160",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"rides",
+						"6856ef4e1235f61715f6f160"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/analytics/passengers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/analytics/passengers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"analytics",
+						"passengers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/admin/users/123",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/admin/users/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"admin",
+						"users",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/vehicles",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/vehicles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/vehicles/:id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicles/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/vehicles/:id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"pickupLocation\": \"East Wing\",\r\n  \"destination\": \"Northern Avenue\",\r\n  \"driverId\": \"ObjectId\",\r\n  \"status\": \"complete\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/vehicles/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehicles",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
