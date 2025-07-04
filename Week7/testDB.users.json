@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6857b5621ac3c68cd5ec1619"
+  },
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "password": "$2b$10$UzRUtLwIZsqgNX1x79PHtuY9hoW19i2e6ESQrYiqU3dnh/8IMi8bK",
+  "role": "admin",
+  "createdAt": {
+    "$date": "2025-06-22T07:48:50.010Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c0b0419bac0905860c65"
+  },
+  "name": "Alice",
+  "email": "alice@example.com",
+  "password": "$2b$10$8NB9ixN/.gTgZ0Be3S.1AO3TmPNkXXGVFbfjav6bI0N.f2y8Qevoa",
+  "role": "user",
+  "createdAt": {
+    "$date": "2025-06-22T08:37:04.821Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c0d2419bac0905860c66"
+  },
+  "name": "Ben",
+  "email": "ben@example.com",
+  "password": "$2b$10$Jels4tUkUr0dz/piCxKrqOft5L/T0Rlmr5cGnzRqLgneNz7uUtbby",
+  "role": "user",
+  "createdAt": {
+    "$date": "2025-06-22T08:37:38.800Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c0f6419bac0905860c67"
+  },
+  "name": "Max",
+  "email": "max@example.com",
+  "password": "$2b$10$0az2uU2wY9AEZ5MIWkRiluDhtmg/62LvpUec1UkiRmxssUkcTxopO",
+  "role": "user",
+  "createdAt": {
+    "$date": "2025-06-22T08:38:14.827Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c116419bac0905860c68"
+  },
+  "name": "Charlie",
+  "email": "charlie@example.com",
+  "password": "$2b$10$4.qHyoLm4LU0qkLVKBc39uIU5N9lKX0YoQbAxSjcKdgjzx8J.xMLO",
+  "role": "user",
+  "createdAt": {
+    "$date": "2025-06-22T08:38:46.251Z"
+  }
+}]
