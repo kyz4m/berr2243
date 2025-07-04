@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6857c514ad48285a2a5ef1f3"
+  },
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "passwordJohnDoe",
+  "role": "driver",
+  "isAvailable": true,
+  "rating": 4.8,
+  "vehicleId": "6857c368ad48285a2a5ef1f0",
+  "createdAt": {
+    "$date": "2025-06-22T08:55:48.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c5afad48285a2a5ef1f4"
+  },
+  "name": "Marcus",
+  "email": "marcus@example.com",
+  "password": "passwordMarcus",
+  "role": "driver",
+  "isAvailable": true,
+  "rating": 4.4,
+  "vehicleId": "6857c348ad48285a2a5ef1ef",
+  "createdAt": {
+    "$date": "2025-06-22T08:58:23.718Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c5f2ad48285a2a5ef1f5"
+  },
+  "name": "Gepard",
+  "email": "gepardd@example.com",
+  "password": "passwordGepard",
+  "role": "driver",
+  "isAvailable": true,
+  "rating": 4.7,
+  "vehicleId": "6857c3daad48285a2a5ef1f1",
+  "createdAt": {
+    "$date": "2025-06-22T08:59:30.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6857c648ad48285a2a5ef1f6"
+  },
+  "name": "Sandra",
+  "email": "sandra@example.com",
+  "password": "passwordSandra",
+  "role": "driver",
+  "isAvailable": true,
+  "rating": 4.1,
+  "vehicleId": "6857c3e6ad48285a2a5ef1f2",
+  "createdAt": {
+    "$date": "2025-06-22T09:00:56.907Z"
+  }
+}]
