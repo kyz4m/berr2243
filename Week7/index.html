@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ride-Hailing API Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    h2 { color: #333; }
+    label { display: block; margin-top: 10px; }
+    input { width: 300px; padding: 5px; }
+    button { margin-top: 10px; padding: 8px 15px; }
+    pre { background: #f4f4f4; padding: 10px; white-space: pre-wrap; word-wrap: break-word; }
+    .section { margin-bottom: 40px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Ride-Hailing System Dashboard</h1>
+
+  <div class="section">
+    <h2>Rides</h2>
+    <button onclick="getRides()">Fetch All Rides</button>
+    <pre id="ridesOutput"></pre>
+
+    <h3>Create Ride</h3>
+    <label>Pickup Location: <input id="pickup"></label>
+    <label>Destination: <input id="destination"></label>
+    <label>Driver ID: <input id="driverId"></label>
+    <label>Status: <input id="status"></label>
+    <button onclick="createRide()">Create Ride</button>
+
+    <h3>Update Ride Status</h3>
+    <label>Ride ID: <input id="rideId"></label>
+    <label>New Status: <input id="newStatus"></label>
+    <button onclick="updateRide()">Update Ride</button>
+
+    <h3>Delete Ride</h3>
+    <label>Ride ID: <input id="deleteRideId"></label>
+    <button onclick="deleteRide()">Delete Ride</button>
+  </div>
+
+  <div class="section">
+    <h2>Users</h2>
+    <button onclick="getUsers()">Fetch All Users</button>
+    <pre id="usersOutput"></pre>
+
+    <h3>Create User</h3>
+    <label>Name: <input id="userName"></label>
+    <label>Age: <input id="userAge" type="number"></label>
+    <button onclick="createUser()">Create User</button>
+
+    <h3>Update User</h3>
+    <label>User ID: <input id="userId"></label>
+    <label>Updated Name: <input id="updatedUserName"></label>
+    <label>Updated Age: <input id="updatedUserAge" type="number"></label>
+    <button onclick="updateUser()">Update User</button>
+
+    <h3>Delete User</h3>
+    <label>User ID: <input id="deleteUserId"></label>
+    <button onclick="deleteUser()">Delete User</button>
+  </div>
+
+  <script>
+    const baseURL = 'http://localhost:3000';
+
+    // ---- Rides ----
+    async function getRides() {
+      const res = await fetch(`${baseURL}/rides`);
+      const data = await res.json();
+      document.getElementById('ridesOutput').innerText = JSON.stringify(data, null, 2);
+    }
+
+    async function createRide() {
+      const body = {
+        pickupLocation: document.getElementById('pickup').value,
+        destination: document.getElementById('destination').value,
+        driverId: document.getElementById('driverId').value,
+        status: document.getElementById('status').value
+      };
+      await fetch(`${baseURL}/rides`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      getRides();
+    }
+
+    async function updateRide() {
+      const rideId = document.getElementById('rideId').value;
+      const body = { status: document.getElementById('newStatus').value };
+      await fetch(`${baseURL}/rides/${rideId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      getRides();
+    }
+
+    async function deleteRide() {
+      const rideId = document.getElementById('deleteRideId').value;
+      await fetch(`${baseURL}/rides/${rideId}`, { method: 'DELETE' });
+      getRides();
+    }
+
+    // ---- Users ----
+    async function getUsers() {
+      const res = await fetch(`${baseURL}/users`);
+      const data = await res.json();
+      document.getElementById('usersOutput').innerText = JSON.stringify(data, null, 2);
+    }
+
+    async function createUser() {
+      const body = {
+        name: document.getElementById('userName').value,
+        age: parseInt(document.getElementById('userAge').value)
+      };
+      await fetch(`${baseURL}/users`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      getUsers();
+    }
+
+    async function updateUser() {
+      const userId = document.getElementById('userId').value;
+      const body = {
+        name: document.getElementById('updatedUserName').value,
+        age: parseInt(document.getElementById('updatedUserAge').value)
+      };
+      await fetch(`${baseURL}/users/${userId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+      getUsers();
+    }
+
+    async function deleteUser() {
+      const userId = document.getElementById('deleteUserId').value;
+      await fetch(`${baseURL}/users/${userId}`, { method: 'DELETE' });
+      getUsers();
+    }
+  </script>
+</body>
+</html>
