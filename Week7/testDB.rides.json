@@ -1,0 +1,46 @@
+[
+  {
+    "_id": { "$oid": "6857c88cad48285a2a5ef1f7" },
+    "pickupLocation": "East Wing",
+    "destination": "Northern Avenue",
+    "customerId": "6857c0b0419bac0905860c65",
+    "driverId": "6857c514ad48285a2a5ef1f3",
+    "status": "complete",
+    "price": 12.5,
+    "distance": 10.2,
+    "requestedAt": { "$date": "2025-06-22T09:10:36.620Z" }
+  },
+  {
+    "_id": { "$oid": "6857c94ead48285a2a5ef1f8" },
+    "pickupLocation": "Central Park",
+    "destination": "Mall",
+    "customerId": "6857c0f6419bac0905860c67",
+    "driverId": "6857c5afad48285a2a5ef1f4",
+    "status": "complete",
+    "price": 20,
+    "distance": 9.8,
+    "requestedAt": { "$date": "2025-06-22T09:13:50.789Z" }
+  },
+  {
+    "_id": { "$oid": "6857c9abad48285a2a5ef1f9" },
+    "pickupLocation": "Apartment",
+    "destination": "Restaurant",
+    "customerId": "6857c0b0419bac0905860c65",
+    "driverId": "6857c648ad48285a2a5ef1f6",
+    "status": "complete",
+    "price": 25.3,
+    "distance": 11.6,
+    "requestedAt": { "$date": "2025-06-22T09:15:23.326Z" }
+  },
+  {
+    "_id": { "$oid": "6857ca2cad48285a2a5ef1fa" },
+    "pickupLocation": "Bus Stop",
+    "destination": "Train Station",
+    "customerId": "6857c0d2419bac0905860c66",
+    "driverId": "6857c5afad48285a2a5ef1f4",
+    "status": "cancelled",
+    "price": 0,
+    "distance": 0,
+    "requestedAt": { "$date": "2025-06-22T09:17:32.426Z" }
+  }
+]
