@@ -1,0 +1,11 @@
+| Use Case                   | Endpoint                | Method | Status Codes |
+| -------------------------- | ----------------------- | ------ | ------------ |
+| **Customer Registration**  | `/users`                | POST   | 201, 400     |
+| **Customer Login**         | `/auth/login`           | POST   | 200, 401     |
+| **View Profile**           | `/users/:id`            | GET    | 200, 404     |
+| **Book Ride**              | `/rides`                | POST   | 201, 400     |
+| **Update Driver Status**   | `/drivers/:id/status`   | PATCH  | 200, 404     |
+| **Accept Ride**            | `/rides/:id/accept`     | PATCH  | 200, 404     |
+| **View Earnings**          | `/drivers/:id/earnings` | GET    | 200, 404     |
+| **Block User** (Admin)     | `/admin/users/:id`      | DELETE | 204, 403     |
+| **View Analytics** (Admin) | `/admin/analytics`      | GET    | 200          |
